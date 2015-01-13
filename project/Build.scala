@@ -27,7 +27,7 @@ object TestNGPluginBuild extends Build {
     scalaVersion := "2.10.4",
     scalacOptions ++= Seq("-unchecked", "-deprecation"))
 
-  lazy val publishSettings: Seq[Setting[_]] = bintrayPublishSettings ++ Seq(
+  lazy val publishSettings: Seq[Setting[_]] = Seq(
     publishMavenStyle := false,
     licenses += ("BSD", url("http://opensource.org/licenses/BSD-3-Clause")),
     repository in bintray := "sbt-plugins",
